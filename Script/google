@@ -1,0 +1,25 @@
+#!/usr/bin/env python 
+
+import webbrowser, sys, pyperclip, requests, bs4
+from urllib.request import urlopen
+def main():
+	if len(sys.argv) > 1:
+		keyword = ' '.join(sys.argv[1:])
+	else:
+		# if no keyword is entered, the script would search for the keyword
+		# copied in the clipboard
+		keyword = pyperclip.paste()
+
+	res=requests.get('http://google.com/search?q='+	keyword)
+	res.raise_for_status()
+	res1 = urlopen('http://google.com/search?q='+ keyword).read()
+	print(res1)
+	soup = bs4.BeautifulSoup(res1, "html.parser")
+	linkElems = soup.select('.r a')
+	numOpen = min(5, len(linkElems))
+
+	for i in range(numOpen):
+		webbrowser.open('http://google.com' + linkElems[i].get('href'))
+
+if __name__ == '__main__':
+	main()

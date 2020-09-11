@@ -1,0 +1,10 @@
+#!/bin/bash
+
+nb=$1
+sum=0
+
+while [[ $nb -gt 0 ]]; do
+	sum=$(($sum+($nb%10)))
+	nb=$(($nb/10))
+done
+echo $sum

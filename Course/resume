@@ -1,0 +1,10 @@
+liste de commande et leur usefulness 
+lpstat : permet de sortir les imprimante accessibles
+wc : permet de sortir le nombre de ligne et de mot dans le fichier
+ps : permet de connaitre le shell utilise par notre systeme lunix
+read : permet  de recuperer une valeur de l'user
+REPLY : variable contenant la valeur du user en absence de variable de lecture avec la commande read
+read -p : pour afficher une message avant la lecture de la variable
+declare –r nom=valeur [ nom=valeur ... ]: pour declarer une constante
+env: pour voir les variables d'environnement
+shift [ n ] : permet de decaler  la numerotation des arguments de n

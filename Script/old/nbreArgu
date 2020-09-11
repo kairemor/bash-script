@@ -1,0 +1,5 @@
+#! /bin/bash 
+echo -e " entrer une suite de mot \c"
+read a
+set $a
+echo "le nombre d'arguments est $#"

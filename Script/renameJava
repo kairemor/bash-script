@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+pictures=$(ls *java)
+
+for pic in $pictures; do
+	if [[ -f $pic ]]; then
+		fin=${#pic}-5
+		basenom=${pic:0:fin}
+		mv $pic "$basenom""DTO.java" 
+	fi
+	
+done

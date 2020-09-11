@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "entre un nombre : " 
+read nombre
+somme=0 
+while (( $nombre > 0))
+do
+	somme=$(( somme + nombre))
+	((nombre--))
+done
+echo " la somme des nombres inferieur ou egale a $n sont : $somme "

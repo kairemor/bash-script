@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while read prenom genre 
+do
+	case $genre in
+	m )
+		echo $prenom  >> garcon ;;
+	f )
+		echo $prenom  >> fille ;;
+	esac
+done < personne

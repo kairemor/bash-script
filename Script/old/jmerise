@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /opt/JMerise05F/
+
+java -jar JMerise.jar

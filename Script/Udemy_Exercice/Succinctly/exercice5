@@ -1,0 +1,7 @@
+#!/bin/bash
+for ele in "dog" "man" "bear"
+do
+
+echo $ele
+done
+

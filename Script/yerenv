@@ -1,0 +1,3 @@
+#!/bin/bash
+
+source ~/Documents/Python/FrameWork/Django/Project/P_Yerel/V_yerel/bin/activate

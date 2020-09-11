@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while read util
+do
+	uid=${util#*:}
+	uid2=${uid#*:}
+	echo "user : " ${util%%:*} "uid" ${uid2%%:*}
+
+done </etc/passwd

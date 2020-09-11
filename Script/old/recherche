@@ -1,0 +1,25 @@
+#!/bin/bash
+
+usage() {
+	echo " there is no argument"
+	echo "syntaxe is : $0 file_name" 
+}
+existe() {
+	local name="$1"
+
+	if [[ -f  "$name" ]]
+	then
+		return 0
+	else
+		return 1s	
+	fi
+}
+
+[[ $# = 0 ]] && usage
+
+if ( existe $1 )
+then
+	echo " the file is found" 
+else
+	echo " the file is note found"
+fi

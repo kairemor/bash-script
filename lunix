@@ -1,0 +1,66 @@
+38 boot process
+
+Bios basic inout and output system
+it is spsecail type of firmware using in the booting process 
+
+independent of the OS
+it allow the boot loader
+perform the POST Power on selt test it check some componant of the device liki CPU memory
+
+
+know the list about boot device 
+	hard drives
+	Usb drives
+	Dvd drives
+
+Boot Loaders
+	Lilo ->Lunix loader 
+	Grub-> Grand Unified Bootloader it replace the LILo 
+
+bootloader start the operating systeme
+it start the needed OS
+
+initrd Initial Ram Disk
+it the temporary file system thar loaded in the  memory when the system boot 
+containt helper and modules required to load the permanemt OS file system 
+
+/boot  directory
+-contains the files required to boot OS
+-initrd
+-kernel
+-boot loader configuration
+
+Kernel ring buffer 
+	contains messages from the lunix kernel 
+	command : dmesg
+	localised in /var/log/dmesg
+	it is a data strucuture with always the same size 
+	it is called vmlunix and after compress vmluniz
+Runlevels description
+0 shutdown 
+1,S,s simngle user mode 
+2 Multi user mode with gui(Debian ubuntu)
+3 Multi user mode with text mode
+4 undifines]d
+5 multiuser mode gui(redhat /cento<<s)	
+6 Reboot 
+	the run level are stored inthe init 
+	/etc/inittab:
+	id:n:initdefaut
+systemd 
+uses targets instead on runlevels 
+
+changing runleves and taget 
+runlevel
+Syntaxe : telintit RunLevelNumber
+		exemple : telinti 5
+target
+syntaxe: systemctl isolate  Target 
+exemple :systemctl isolate graphical.target
+
+Rebooting
+telinit 6
+systemctl isolate reboot.target
+shutdown [option][-r] time 'message'
+
+ 

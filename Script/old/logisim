@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /opt
+java -jar logisim-generic-2.7.1.jar 

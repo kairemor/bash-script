@@ -1,0 +1,25 @@
+#!/bin/bash 
+
+i=1
+
+for pic in *;
+do
+	if [[ "${pic%%.*}" == "${1}"  ]]; then
+		((i++1))
+		continue 
+	fi
+	if [[ -f "$pic" ]]; then
+		ext=${pic##*.}
+		if [[ $ext="png" ]]
+		then
+			mv "$pic" "${1}"${i}".png"
+			((i=i+1))
+		elif [[ $ext="jpg" ]]
+		then
+			mv "$pic" "${1}"${i}".jpg"
+                        ((i=i+1))
+
+		fi	
+	fi
+	
+done

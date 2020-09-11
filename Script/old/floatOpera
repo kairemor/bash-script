@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -p "entre deux reel pas integer" float1 float2
+
+echo "$float1 + $float2" | bc 
+echo "scale=2 ; $float1 / $float2" | bc
+
+#square root of number we must use -l to call the math librarie
+echo " racine carre du premier nombre :"
+echo "scale=4 ;sqrt($float1)" | bc -l
+echo "fonction puissance :"
+echo " scale=2 ; $float1^2" | bc -l

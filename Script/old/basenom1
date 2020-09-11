@@ -1,0 +1,5 @@
+#!/bin/bash 
+
+var=${1##*/}
+num=${#var}-2
+echo ${var:0:num}

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -p "entre un caractere" cara
+
+
+case ${cara:0:1} in
+	[a-z])
+		echo "the character is in smallcase" ;;
+	[A-Z] )
+		echo " the caracter is in capitale case " ;;
+	[0-9] )
+		echo " the caractere is a number " ;;
+	? )
+		echo " the character is a special character " ;;
+	* )
+		echo " unknown type " ;;
+	esac
+

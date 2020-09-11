@@ -1,0 +1,5 @@
+#!/bin/bash
+
+var=$1
+fin=${#var}-2
+gcc $1 -o ${var:0:fin}

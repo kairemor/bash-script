@@ -1,0 +1,4 @@
+#! /bin/bash
+rep=$LOGNAME
+
+echo " le  nom de ma machine $rep "

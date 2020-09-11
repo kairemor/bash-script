@@ -1,0 +1,12 @@
+#!/bin/bash
+
+n=0
+for item in *
+do
+	if [ -d "$item" ]
+	then
+		#echo $item
+		((n=$n+1))
+	fi	
+done
+echo "le nombre de directory est : $n"

@@ -1,0 +1,8 @@
+#! /bin/bash
+
+ls -l $1 ;
+
+set -- $(ls -l $1) 
+
+echo " la taille du votre fichier est " $5 
+echo " merci d'utilise la commande de kaire mor taille "

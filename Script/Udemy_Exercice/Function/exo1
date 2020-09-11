@@ -1,0 +1,17 @@
+#!/bin/bash
+
+file_count()
+{
+	# elements=$(ls $1)
+	cd $1
+	local n=0
+	for ele in $elements * ; do
+		if [[ -f $ele ]]; then
+			((n=$n+1))
+		fi
+	done
+	echo "$1:"
+	echo  "$n"
+}
+
+# file_count /etc

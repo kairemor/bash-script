@@ -1,0 +1,23 @@
+#!/bin/bash 
+
+number=1
+while (($number < 10))
+do
+	if (($number=3))
+	then
+		continu
+	fi	
+	if (($number=6))
+	then
+		break 
+	fi
+
+
+	echo $number
+	((number+=1))
+
+	sleep2
+
+	
+		
+done	

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "entrer votre nom et votre age : " nom age 
+
+if [[ $age -gt 18 ]]
+then
+	echo " vous etes majeur "
+else
+	echo "vous etes mineur "
+fi

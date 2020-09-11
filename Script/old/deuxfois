@@ -1,0 +1,5 @@
+#! /bin/bash
+
+read -p "entrer un mot :" mot
+echo $mot $mot
+echo merci kaire mor

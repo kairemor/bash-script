@@ -1,0 +1,17 @@
+#! /bin/bash
+
+echo "ce programme permet d'ajouter du texte dans la fin d'un fichier" ; echo ;
+echo -e "entrer le nom du fichier : \c" ;
+read file_name 
+if [[ -f $file_name ]]
+then
+	if [ -w $filename ]
+	then
+		echo " veiller saisier le text a ajouter .. pour terminer appuyer crtl+d" 
+		cat >> $file_name
+	else
+		echo " vous n'avez pas le droit d'ecrire dans ce fichier "
+	fi
+else
+	echo " ce fichier $file_name n'existe pas "
+fi

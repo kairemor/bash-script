@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "entre les deux nombres a additionner " nbre1 nbre2
+
+echo -e "la somme est : \c " ; bc << mor
+$nbre1 + $nbre2
+mor
+

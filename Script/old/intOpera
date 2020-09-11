@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -p "entre les deux nombre a additionner" nbre1 nbre2
+
+
+
+echo "la somme des deux nombres est :" $(( nbre1 + nbre2 ))  
+
+read -p "entre deux nombre a multiplier" mul1 mul2
+
+# avec la deuxieme methode de calcul le signe de multiplication doit etre precede par un anti-slash
+
+echo " le produit des deux nombres est :" $(expr $mul1 \* $mul2)
+
+echo " et leur sommme est : " $(expr $mul1 + $mul2)
+
+
+

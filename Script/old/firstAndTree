@@ -1,0 +1,4 @@
+#! /bin/bash
+echo entre trois chose
+read un deux trois
+echo la premier est $un et le troisieme $trois

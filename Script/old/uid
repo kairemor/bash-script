@@ -1,0 +1,10 @@
+#! /bin/bash
+
+set $(id)
+
+svIFS=$IFS
+IFS==
+set $1
+
+echo $2
+

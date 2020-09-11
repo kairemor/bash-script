@@ -1,0 +1,31 @@
+#!/bin/bash
+fic=$1
+
+ext=${fic##*.}
+
+if [[ -f $fic ]]; then
+	if [[ $ext = "mp4"  ||  $ext = "wav"  || $ext = "mkv" || $ext = "webm" ]]; then
+		echo "video "
+		gnome-mpv "$*" &
+	elif [[ $ext = "html" ]]; then
+		echo "un fichier html"
+		chromium-browser "$*" &
+	elif [[ $ext = "mp3" ]]; then
+		echo "un son"
+		vlc "$*" &
+	elif [[ $ext = "pdf"  ]]; then
+		echo "fichier pdf"
+		evince "$*"	&
+	elif [[ "$ext" == "png" || "$ext" == "jpg" || "$ext" == "jpeg" ]]; then
+		echo "image" 
+		gthumb "$*" &
+	elif [[ $ext = "sh" || $ext = "c" || $ext = "java" || $ext = "php" || $ext = "py" || $ext = "fic"  ]]; then
+		subl "$*"
+	fi
+
+elif [[ -d $fic ]]; then
+	cd $1
+else
+	echo "No file or directory found"
+	echo "syntaxe : $0 [<fichier>][<dossier>] "	
+fi

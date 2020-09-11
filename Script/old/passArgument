@@ -1,0 +1,21 @@
+#! /bin/bash
+#if we wanna pass argument in the script there are several ways to do it
+#first is with the this defaut variable
+#if we wanna take also the commande name like an argument we can use
+#the index a position 0 $0
+
+echo with the variable defaut $1 $2 $3 ; echo
+
+#the second way is to declare an array variable in this way
+#IN THIS WAY the commande can't ce printed because the index of a array is the first argument
+
+argus=("$@")
+echo with an array and index ${argus[0]} ${argus[1]} ${argus[2]}
+
+#we can also print the argument by
+
+echo without index $@
+
+#to know the number of  argument we use
+
+echo $#	

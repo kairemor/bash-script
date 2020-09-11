@@ -1,0 +1,20 @@
+#!/bin/bash
+if [[ $# > 2 ]]; then
+	echo "erreur argument"
+	echo "syntaxe : $0 chaine nbre"
+fi
+case $2 in
+	[0-9] )
+	
+		;;
+	*) 
+		echo " second argu must be number"
+		exit 1 
+
+esac
+
+
+if [[ $2 > ${#1} ]]; then
+	exit 1
+else echo ${1:0:$2} 
+fi	

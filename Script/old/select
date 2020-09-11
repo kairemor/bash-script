@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+select name in langage_C langage_C++ "java"
+do
+	case $name in 
+		langage_C)
+		echo "your prefered language is langage_C" ;;
+		langage_C++)
+		echo "your prefer langage_C++" ;;
+		"java")
+		echo " java is the best for you"	
+	esac		
+done	

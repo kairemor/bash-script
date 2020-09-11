@@ -1,0 +1,6 @@
+#!/bin/bash
+
+case $# in 
+4) echo " le nombre est correst " ;;
+*) echo " erreur sur le nombre d'argu entree" 
+esac

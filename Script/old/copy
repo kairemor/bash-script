@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "entre le nom de troi fichier donc "
+echo " le premier est le fichier principal dont vous voulez copier"
+echo " le deuxieme et le troisieme les nom des nouveaux fichiers"
+read file_name
+
+set $file_name
+cp $1 $2 ; cp $2 $3

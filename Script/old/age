@@ -1,0 +1,9 @@
+#!/bin/bash
+
+agemor=22
+agelamine=23
+
+echo " entre le nom de la persone dont vous soulez connaitre son age"
+read nom
+rep=age$nom
+echo " son age est : " ${!rep}

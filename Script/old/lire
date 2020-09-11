@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while read texte
+do
+	echo $texte
+done < $1
+
+#this is more puissant to use the line separator variable system 
+#while IFS = read -r line
+#do
+#	echo $lire
+#done

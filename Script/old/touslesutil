@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read donne
+do
+	echo ${donne%%:*}
+done </etc/passwd	

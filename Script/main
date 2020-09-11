@@ -1,0 +1,7 @@
+#!/bin/bash 
+lab=(jeff roger brian)
+lab[3]=sean
+echo ${lab[*]}
+lab=("${lab[*]}" "${lab[*]}")
+echo ${#lab[*]}
+echo ${#lab[*]}

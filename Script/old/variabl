@@ -1,0 +1,24 @@
+#! /bin/bash
+
+#echo enter your name
+#read name kaire
+#echo "your name is  " $name $kaire
+
+#this is a comment
+#to asak the input in the same line we use the option
+#read -p 'enter you name : ' nam
+#echo you name is $nam
+
+#to ask data and store it in a array we use 
+
+echo entrer votre nom et votre prenom 
+read -a name
+read -sp "passs word: " pswor 
+echo votre prenom est ${name[0]} , -n votre prenom ${name[1]} et n et votre mot de passe $pswor
+ 
+
+ echo entre votre numero 
+ read
+ echo votre numero est $REPLY 
+#args=("$@")
+ echo the number of arguments $#

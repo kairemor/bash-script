@@ -1,0 +1,5 @@
+#! /bin/bash
+
+set $(date)
+
+echo " le jour est : $3 "

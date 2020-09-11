@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+pictures=$(ls *jpg)
+i=1
+
+for pic in $pictures; do
+	if [[ -f $pic ]]; then
+		mv $pic "image"${i}".jpg"
+		((i=i+1)) 
+	fi
+	
+done

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+var=$1
+fin=${#var}-2
+output=${var:0:fin}
+gcc $1 -o $output
+./$output $2
+rm $output

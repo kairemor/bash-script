@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -e "entre la marque de votre voiture : \c"
+read mark
+
+case $mark in
+	"yundai")
+		echo "le prix de votre voiture est de 10$" ;;
+	"mercedes")
+		echo " le prix de votre voiture esr de 3$" ;;
+	*)
+		echo " prix inconnu" ;;
+	esac	

@@ -1,0 +1,11 @@
+#!/bin/bash
+#@(#)oui
+
+echo entre la reponse 
+read rep
+case $rep in
+o|O )
+echo OUI ;;
+*)
+echo Indefini
+esac

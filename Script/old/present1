@@ -1,0 +1,6 @@
+#!/bin/bash
+
+	echo $LOGNAME > fic
+
+	 grep "$1" fic > fich  && echo $1 est connecte || echo $1 n\'est pas connecte
+

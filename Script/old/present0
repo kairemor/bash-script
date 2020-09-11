@@ -1,0 +1,8 @@
+#!/bin/bash
+
+	echo $LOGNAME > fic
+	grep "$1" fic > fice
+
+	echo $?
+
+	rm fic ; rm fice 
